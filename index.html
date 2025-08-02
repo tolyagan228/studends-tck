@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>students</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Список студентів</h1>
+      <button getStudents>Отримати студентів</button>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Ім'я</th>
+            <th>Вік</th>
+            <th>Курс</th>
+            <th>Навички</th>
+            <th>Email</th>
+            <th>Запис</th>
+            <th>Дії</th>
+          </tr>
+        </thead>
+        <tbody studentsField></tbody>
+      </table>
+      <h2>Додати нового студента</h2>
+      <form id="add-student-form" addStudentForm>
+        <label>Ім'я: <input type="text" id="name" required surname /></label>
+        <label>Вік: <input type="number" id="age" required age /></label>
+        <label>Курс: <input type="text" id="course" required course /></label>
+        <label
+          >Навички: <input type="text" id="skills" required skills
+        /></label>
+        <label>Email: <input type="email" id="email" required email /></label>
+        <label
+          >Записаний: <input type="checkbox" id="isEnrolled" record
+        /></label>
+      </form>
+      <button type="button" addStudent>Додати студента</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
